@@ -1,0 +1,35 @@
+doctype html
+html
+    head
+        title #{title}
+        link(href='/styles/style.css', rel='stylesheet')
+        script.
+            var renderStart = new Date().getTime();
+            window.onload=function() { 
+               var elapsed = new Date().getTime()-renderStart;
+               // send the info to the server 
+               console.log('Rendered in ' + elapsed + 'ms'); 
+            } 
+    body
+    #content
+        .header
+            h3 ToDo List
+            hr
+            
+        form(id='form', method='post', action='/toDo/create')
+            label(for='name') Name
+            input(type='text', id='name', name='name')
+            input(type='checkbox', id='checkbox', name='status')
+            input(type='submit', value='Add task')
+
+        table.grid-table
+            each item in toDos
+                tr
+                    td.firstCol
+                        a(href='/toDo/details/#{item.id}') #{item.id}
+                    td(class='#{item.status}').secondCol
+                        a(href='/toDo/edit/#{item.id}') #{item.name}
+                    td(class='#{item.status}').thirdCol #{item.status}
+                    td.fourthCol
+                        a(href='/toDo/delete/#{item.id}') Delete
+

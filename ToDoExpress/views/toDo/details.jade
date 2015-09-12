@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title #{title}
+        link(href='/styles/style.css', rel='stylesheet')
+    body
+    #content
+        .header
+            h3 Task details
+            hr
+        
+        p 
+            b Task name: 
+            i #{item.name}
+        p 
+            b Status: 
+            i #{item.status}
+        
+        a(href='/toDo') Go back

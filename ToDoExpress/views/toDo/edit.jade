@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title #{title}
+        link(href='/styles/style.css', rel='stylesheet')
+    body
+    #content
+        .header
+            h3 Update task
+            hr
+        
+        form(id='form', method='post', action='/toDo/edit/#{item.id}')
+            label(for='name') Name
+            input(type='text', id='name', name='name' value='#{item.name}')
+            laber(for='status') Status
+            input(type='checkbox', id='checkbox', name='status', checked='#{item.status}' || false)
+            input(type='submit', value='Update')
+            
+            
+        a(href='/toDo') Go back
