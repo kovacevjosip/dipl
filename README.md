@@ -1,5 +1,7 @@
 #Setting project
 
-git clone https://github.com/kovacevjosip/dipl.git \n
-cd dipl \n
+'''
+git clone https://github.com/kovacevjosip/dipl.git 
+cd dipl 
 npm install
+'''
