@@ -1,0 +1,36 @@
+{
+  "name": "NodeJSDiplomski",
+  "version": "0.0.0",
+  "description": "Examples from master thesis",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "basic-auth": "~1.0.3",
+    "body-parser": "~1.14.0",
+    "cookie-parser": "~1.4.0",
+    "express": "~4.13.3",
+    "express-session": "~1.11.3",
+    "jade": "~1.11.0",
+    "method-override": "~2.3.5",
+    "util": "~0.10.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kovacevjosip/dipl.git"
+  },
+  "keywords": [
+    "ToDo",
+    "app",
+    "Node",
+    "Express",
+    "Jade"
+  ],
+  "author": "Josip Kovacevic",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/kovacevjosip/dipl/issues"
+  }
+}
