@@ -1,0 +1,128 @@
+h3 {
+    float: left;
+    margin: 0 0 15px 0;
+}
+
+#load-task {
+    float: right;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+#load-task a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    clear: both;
+}
+
+#content {
+    width: 500px;
+    margin: 0 auto;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+}
+
+#form {
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+label[for=name] {
+    font-weight: bold;
+    width: 50px;
+    display: block;
+    float: left;
+    line-height: 1.4;
+}
+
+input#name {
+    float: left;
+    width: 300px;
+}
+
+input#checkbox {
+    display: block;
+    float: left;
+    margin-left: 30px;
+}
+
+input[type=submit] {
+    float: right;
+}
+
+.grid-table {
+    float: left;
+}
+
+.grid-table a {
+    text-decoration: none;
+}
+
+td.firstCol {
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+td.firstCol a {
+    padding: 5px;
+}
+
+td.secondCol {
+    width: 320px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    display: inline-block;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+td.secondCol:first-letter {
+    text-transform: capitalize;
+}
+
+td.Done.secondCol {
+    text-decoration: line-through;
+}
+
+td.Done.thirdCol {
+    background-color: forestgreen;
+    padding: 0 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+td.Doing.thirdCol {
+    background-color: yellow;
+    padding: 0 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+td.thirdCol {
+    width: 50px;
+}
+
+td.fourthCol {
+    width: 60px;
+    background-color: darkred;
+    border-radius: 5px;
+    text-align: center;
+}
+
+td.fourthCol a {
+    color: white;
+    padding: 5px;
+}

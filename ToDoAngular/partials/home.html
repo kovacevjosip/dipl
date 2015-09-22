@@ -1,0 +1,26 @@
+<div class="header">
+    <h3>Angular ToDo List</h3>
+    <span id="load-task"><a ng-click="loadTasks()">Load tasks</a></span>
+    <span id="load-task"><a ng-click="deleteTasks()">Delete tasks</a></span>
+    <hr>
+</div>
+<form id='form'>
+    <label for="name">Name</label>
+    <input type="text" id='name' ng-model="name">
+    <input type="checkbox" id='checkbox' ng-model="checkbox">
+
+    <input type="submit" value="Add task" ng-click="addTask()">
+</form>
+
+<table class="grid-table" ng-show="taskList">
+    <tr ng-repeat="item in taskList">
+        <td class="firstCol">
+            <a href="#/details/{{item.id}}" ng-bind="::item.id">
+        </td>
+        <td class="secondCol">
+            <a href="#/edit/{{item.id}}" ng-bind="::item.name"></a>
+        </td>
+        <td class="thirdCol" ng-class="::item.status" ng-bind="::item.status"></td>
+        <td class="fourthCol"><a ng-click="deleteTask(item.id)">Delete</a></td>
+    </tr>
+</table>
