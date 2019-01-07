@@ -1,5 +1,5 @@
 {
-  "name": "ToDoExpress",
+  "name": "to-do-express",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,8 @@
   "author": "",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "express": "~4.13.3",
-    "body-parser": "~1.13.3",
+    "express": "~4.16.0",
+    "body-parser": "~1.18.0",
     "jade": "~1.11.0"
   }
 }

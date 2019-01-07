@@ -18,6 +18,9 @@ app.set('view engine', 'jade');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/', (req, res) => {
+    res.redirect('/toDo');
+});
 app.get('/toDo', todo.index);
 app.post('/toDo', todo.createToDo);
 app.post('/toDo/create', isTaskSet, todo.createToDo);
@@ -30,4 +33,11 @@ app.get('/toDo/delete/:id', todo.delete);
 app.get('/toDo/loadTasks', todo.loadTasks);
 app.get('/toDo/deleteTasks', todo.deleteTasks);
 
-app.listen(3000);
+const port = 3001;
+app.listen(port, (err) => {
+    if (err) {
+        console.log('Error: ', err);
+    }
+
+    console.log(`Server is listening on ${port}!`);
+});

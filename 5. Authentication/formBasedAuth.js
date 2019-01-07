@@ -1,5 +1,4 @@
 var express = require('express'),
-    util = require('util'),
     bodyParser = require('body-parser'),
     cookieParser = require('cookie-parser'),
     session = require('express-session');
@@ -49,7 +48,7 @@ app.get('/public', function (req, res) {
 });
 
 app.get('/private', accessChecker, function (req, res) {
-    res.send(util.format('Private access: Welcome %s!', req.session.user.username));
+    res.send(`Private acces: Welcome ${req.session.user.username}!`)
 });
 
 app.listen(3000);
