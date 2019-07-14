@@ -29,10 +29,10 @@ html
             each item in toDos
                 tr
                     td.firstCol
-                        a(href='/toDo/details/#{item.id}') #{item.id}
-                    td(class='#{item.status}').secondCol
-                        a(href='/toDo/edit/#{item.id}') #{item.name}
-                    td(class='#{item.status}').thirdCol #{item.status}
+                        a(href=`/toDo/details/${item.id}`) #{item.id}
+                    td(class=item.status).secondCol
+                        a(href=`/toDo/edit/${item.id}`) #{item.name}
+                    td(class=item.status).thirdCol #{item.status}
                     td.fourthCol
-                        a(href='/toDo/delete/#{item.id}') Delete
+                        a(href=`/toDo/delete/${item.id}`) Delete
 

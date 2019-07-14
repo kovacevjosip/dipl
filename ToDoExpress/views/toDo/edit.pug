@@ -9,11 +9,11 @@ html
             h3 Update task
             hr
         
-        form(id='form', method='post', action='/toDo/edit/#{item.id}')
+        form(id='form', method='post', action=`/toDo/edit/${item.id}`)
             label(for='name') Name
-            input(type='text', id='name', name='name' value='#{item.name}')
+            input(type='text', id='name', name='name' value=item.name)
             laber(for='status') Status
-            input(type='checkbox', id='checkbox', name='status', checked='#{item.status}' || false)
+            input(type='checkbox', id='checkbox', name='status', checked=item.status || false)
             input(type='submit', value='Update')
             
             
